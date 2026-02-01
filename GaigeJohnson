@@ -1,0 +1,137 @@
+<!--Gaige Johnson, IST 256, Portfolio, 1/25/20260-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Gaige Johnson's Portfolio</title>
+        <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+    <header>
+        <h1>Gaige Johnson's Portfolio</h1>
+         <p>This is my portfolio for IST 256</p>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="#about">About Me</a> |
+        <a href="#skills">My Skills</a> |
+        <a href="#projects">My Projects</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+        <main id="main-content">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am currently enrolled in IST 256 and plan on adding to my knowledge of various coding languages taught at PSU Lehigh Valley.</p>
+            
+            <aside>
+                <h3>More About Me</h3>
+                <ul>
+                    <li>Favorite Hobbies: Hiking and Video Games</li>
+                    <li>Favorite Food: Pizza</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <p>List of coding languages I have been taught so far.</p>
+            
+            <ul>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Database languages such as SQL & R</li>
+                <li>Now, I am currently learning HTML</li>
+            </ul>
+
+            <table>
+                <caption>My Education History</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022</td>
+                        <td>PSU Lehigh Valley</td>
+                        <td>Cybersecurity Operations & Analytics</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+            <article>
+                <h3>Project 1:</h3>
+                <p>'Imaginary project information'</p>
+                <figure>
+                    <img src="https://media.istockphoto.com/id/484234714/vector/example-free-grunge-retro-blue-isolated-stamp.jpg?s=1024x1024&w=is&k=20&c=pL5nAT97elm22rQFPEGRwCKiFNq7OBU11YrKRdZjKUQ=" alt="Screenshot of website" width="300" height="200" loading="lazy">
+                    <figcaption>'Screenshot of imaginary project'</figcaption>
+                </figure>
+            </article>
+
+
+            <h3>Video Example</h3>
+            <iframe title="Example Video" width="400" height="225" src="https://www.youtube.com/embed/J7LzL218Ick"></iframe>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+                <br>
+                <button type="submit">Submit Form</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:gmj5180@psu.edu">gmj5180@psu.edu</a> | <a href="tel:484-546-6132">484-546-6132</a></p>
+    </footer>
+
+</body>
+</html>
