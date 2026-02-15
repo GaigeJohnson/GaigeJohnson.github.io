@@ -5,3 +5,4 @@ form.addEventListener("submit", function (event) {
     alert("Thank you for your submission");
     form.reset();
 });
+
