@@ -2,7 +2,14 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
-    alert("Thank you for your submission");
+
+    if (userName === "") {
+        alert("Please enter a name before submitting.");
+    }
+    else {
+        alert("Thank you form the submission.")
+    }
+    
     form.reset();
 });
 
