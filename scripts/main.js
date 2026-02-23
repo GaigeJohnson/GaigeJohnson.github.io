@@ -19,12 +19,15 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
             
             const nameInput = document.querySelector("#fname");
-            const userName = nameInput ? nameInput.value.trim() : "";
+            const messageInput = document.querySelector("#message");
 
-            if (userName === "") {
-                alert("Please enter a name before submitting.");
+            const userName = nameInput ? nameInput.value.trim() : "";
+            const userMessage = messageInput ? messageInput.value.trim() : "";
+
+            if (userName === "" || userMessage === "") {
+                alert("Please enter both a name and a message before submitting.");
             } else {
-                alert("Thank you for the submission!");
+                alert("Thank you for the submission.");
                 form.reset();
             }
         });
