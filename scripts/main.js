@@ -8,8 +8,8 @@ form.addEventListener("submit", function (event) {
     }
     else {
         alert("Thank you form the submission.")
+        
+        form.reset();
     }
-    
-    form.reset();
 });
 
