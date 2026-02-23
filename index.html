@@ -6,6 +6,21 @@
         <title> Gaige Johnson's Portfolio</title>
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <style>
+        .dark-mode {
+            background-color: #1a1a1a !important;
+            color: #f4f4f4 !important;
+        }
+
+        .dark-mode .jumbotron, 
+        .dark-mode .table, 
+        .dark-mode aside {
+            background-color: #333 !important;
+            color: #fff !important;
+        }
+
+        .dark-mode .table-hover tbody tr:hover {
+            background-color: #444 !important;
+        }
         body {
             font-family: 'Times New Roman', Times, serif;
             padding-top: 20px;
@@ -35,8 +50,10 @@
     </style>
     </head>
     <body>
-
+    
     <div class="container"> 
+
+    <button id="dark-mode-toggle" class="btn btn-default">Switch to Dark Mode</button>
 
     <header>
         <h1>Gaige Johnson's Portfolio</h1>
