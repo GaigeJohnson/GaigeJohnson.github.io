@@ -15,6 +15,8 @@ toggleBtn.addEventListener("click", function() {
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    const userName = document.querySelector("#fname").value;
+
     if (userName === "") {
         alert("Please enter a name before submitting.");
     }
