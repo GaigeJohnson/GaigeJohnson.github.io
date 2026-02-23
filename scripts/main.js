@@ -1,29 +1,32 @@
-const form = document.querySelector("form");
-const toggleBtn = document.querySelector("#dark-mode-toggle");
-const body = document.body;
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    const toggleBtn = document.querySelector("#dark-mode-toggle");
+    const body = document.body;
 
-toggleBtn.addEventListener("click", function() {
-    body.classList.toggle("dark-mode");
+    if (toggleBtn) {
+        toggleBtn.addEventListener("click", function() {
+            body.classList.toggle("dark-mode");
+            if (body.classList.contains("dark-mode")) {
+                toggleBtn.textContent = "Switch to Light Mode";
+            } else {
+                toggleBtn.textContent = "Switch to Dark Mode";
+            }
+        });
+    }
 
-    if (body.classList.contains("dark-mode")) {
-        toggleBtn.textContent = "Switch to Light Mode";
-    } else {
-        toggleBtn.textContent = "Switch to Dark Mode";
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            
+            const nameInput = document.querySelector("#fname");
+            const userName = nameInput ? nameInput.value.trim() : "";
+
+            if (userName === "") {
+                alert("Please enter a name before submitting.");
+            } else {
+                alert("Thank you for the submission!");
+                form.reset();
+            }
+        });
     }
 });
-
-form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const userName = document.querySelector("#fname").value;
-
-    if (userName === "") {
-        alert("Please enter a name before submitting.");
-    }
-    else {
-        alert("Thank you form the submission.")
-        
-        form.reset();
-    }
-});
-
